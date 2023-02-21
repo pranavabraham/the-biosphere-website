@@ -1,4 +1,4 @@
-# the-biosphere-website
+# The Biosphere Website
 The official repository for the website of The Biosphere Club.
 
 # PR Format 
