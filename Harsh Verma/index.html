@@ -5,10 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Sanchez&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sanchez&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -24,6 +31,15 @@
               poppins: ["Poppins"],
               sanchez: ["Sanchez"],
             },
+            backgroundImage: {
+              homepageimg:
+                "url('./img/106-1060448_earth-svg-download-earth-svg-doodle-of-the-earth_adobe_express.svg')",
+              facultybgimg: "url('./img/abstractleaf-real_adobe_express.svg')",
+            },
+            colors: {
+              homepage: "#DAF7A6",
+              eventspage:"#ECF7A6"
+            },
           },
         },
       };
@@ -38,75 +54,83 @@
     <!--Home Section-->
     <section id="home">
       <!--main container of the home page-->
-      <div class="container flex flex-col items-center mt-5 mx-auto px-8">
+      <div class="container flex flex-col items-center">
         <!--first half of the home page-->
-        <div class="conatainer flex flex-col items-center">
-          <!-- ellipse-->
-          <div class="my-2 bg-gray-400 p-9 rounded-full">elli</div>
+        <div class="bg-homepage">
+          <div class="container flex flex-col items-center bg-homepageimg bg-no-repeat bg-cover">
+            <!-- ellipse-->
+            <div class="my-2 bg-gray-300 p-9 rounded-full">elli</div>
 
-          <!--tagline-->
-          <div class="my-3 font-poppins text-xs">
-            195 Countries | 8 Billion People | 1 Planet
-          </div>
+            <!--tagline-->
+            <div class="my-3 font-poppins text-xs">
+              195 Countries | 8 Billion People | 1 Planet
+            </div>
 
-          <!-- main tagline-->
-          <div class="text-1xl font-poppins text-center mb-10">
-            <p class="">
-              One Planet, One conscious decision to live in harmony
-            </p>
-          </div>
+            <!-- main tagline-->
+            <div class="text-1xl font-poppins text-center mb-10">
+              <p class="">
+                One Planet, One conscious decision to live in harmony
+              </p>
+            </div>
 
-          <!--about us-->
-          <div class="container flex flex-col items-center my-10 bg-gray-100">
-            <!--About us heading-->
-            <div class="font-sanchez mt-3">About Us</div>
+            <!--about us-->
+            <div
+              class="flex flex-col items-center my-10 bg-gray-100 mx-4 rounded-xl bg-opacity-70"
+            >
+              <!--About us heading-->
+              <div class="font-sanchez mt-3">About Us</div>
 
-            <!--group photo and content-->
-            <div class="container flex flex-row p-3">
-              <!--content-->
-              <div class="flex text-[7px] mr-0.5">
-                <p class="p-3">
-                  We created our club with the vision to create awareness among
-                  people and make impact by realizing how real the global
-                  warming and climate changes are. Join us to build a
-                  sustainable environment and leave behind a better place for
-                  the future generations. Encouraging active participation and
-                  spreading hope that small changes do matter. Respecting,
-                  Observing and Understanding of Plants, Animals, Places and
-                  Culture. Getting knowledge and finding new ways to heal the
-                  planet.
-                </p>
-              </div>
+              <!--group photo and content-->
+              <div class="container flex flex-row p-3">
+                <!--content-->
+                <div class="flex text-[7px] mr-0.5">
+                  <p class="p-3">
+                    We created our club with the vision to create awareness
+                    among people and make impact by realizing how real the
+                    global warming and climate changes are. Join us to build a
+                    sustainable environment and leave behind a better place for
+                    the future generations. Encouraging active participation and
+                    spreading hope that small changes do matter. Respecting,
+                    Observing and Understanding of Plants, Animals, Places and
+                    Culture. Getting knowledge and finding new ways to heal the
+                    planet.
+                  </p>
+                </div>
 
-              <!--group photo-->
-              <div class="flex items-center">
-                <img src="./img/eren.jpg" class="rounded-md p-3" />
+                <!--group photo-->
+                <div class="flex items-center">
+                  <img src="./img/eren.jpg" class="rounded-md p-3" />
+                </div>
               </div>
             </div>
           </div>
         </div>
 
         <!--second half of the home page-->
-        <div class="conatainer flex flex-col items-center my-5 bg-gray-100">
-          <!--faculty coordinator heading-->
-          <div class="font-sanchez text-[14px] my-4">Faculty Coordinator</div>
+        <div id="facultyCont" class="bg-facultybgimg bg-cover ">
 
-          <!--madam photo and content-->
-          <div class="container flex flex-row">
-            <!--madam photo-->
-            <div class="flex items-center">
-              <img src="./img/eren.jpg" class="rounded-md p-3" />
-            </div>
+          <!--faculty container-->
+          <div class="flex flex-col items-center my-5 mx-6 bg-gray-100 bg-opacity-30 rounded-xl">
+            <!--faculty coordinator heading-->
+            <div class="font-sanchez text-[14px] my-4">Faculty Coordinator</div>
 
-            <!--content-->
-            <div class="flex text-[7px] mr-0.5">
-              <p class="p-3">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Praesentium quos minima, provident ipsum doloremque asperiores
-                deserunt alias facere sed, dignissimos exercitationem ea unde
-                magnam natus aspernatur? Nostrum perspiciatis officiis
-                explicabo.
-              </p>
+            <!--madam photo and content-->
+            <div class="container flex flex-row">
+              <!--madam photo-->
+              <div class="flex items-center">
+                <img src="./img/eren.jpg" class="rounded-md p-3" />
+              </div>
+
+              <!--content-->
+              <div class="flex text-[7px] mr-0.5">
+                <p class="p-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Praesentium quos minima, provident ipsum doloremque asperiores
+                  deserunt alias facere sed, dignissimos exercitationem ea unde
+                  magnam natus aspernatur? Nostrum perspiciatis officiis
+                  explicabo.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -116,14 +140,14 @@
     <!--Events Section-->
     <section id="events">
       <!--main container-->
-      <div class="container flex flex-col items-center my-5 mx-auto px-8">
+      <div class="flex flex-col items-center bg-eventspage">
         <!--events heading-->
         <div class="text-xl my-5 font-sanchez">Events</div>
 
         <!--events container-->
         <div class="container flex flex-col my-5">
           <!--event1 container-->
-          <div class="conatainer flex flex-col items-center my-5 bg-gray-100">
+          <div class="conatainer flex flex-col items-center my-5 bg-gray-100 mx-4 rounded-xl bg-opacity-50">
             <!--event 1 heading-->
             <div class="font-sanchez text-[14px] my-3">Event 1</div>
 
@@ -148,24 +172,21 @@
           </div>
 
           <!--event 2 container-->
-          <div class="container flex flex-col items-center my-10 bg-gray-100">
+          <div class="conatainer flex flex-col items-center my-5 bg-gray-100 mx-4 rounded-xl bg-opacity-50">
             <!--event 2 heading-->
-            <div class="font-sanchez mt-3">Event 2</div>
+            <div class="font-sanchez text-[14px] my-3">Event 2</div>
 
             <!--event photo and content-->
-            <div class="container flex flex-row p-3">
+            <div class="container flex flex-row">
+              
               <!--content-->
-              <div class="flex text-[7px] mr-0.5">
+              <div class="flex text-[7px] ml-0.5">
                 <p class="p-3">
-                  We created our club with the vision to create awareness among
-                  people and make impact by realizing how real the global
-                  warming and climate changes are. Join us to build a
-                  sustainable environment and leave behind a better place for
-                  the future generations. Encouraging active participation and
-                  spreading hope that small changes do matter. Respecting,
-                  Observing and Understanding of Plants, Animals, Places and
-                  Culture. Getting knowledge and finding new ways to heal the
-                  planet.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Praesentium quos minima, provident ipsum doloremque asperiores
+                  deserunt alias facere sed, dignissimos exercitationem ea unde
+                  magnam natus aspernatur? Nostrum perspiciatis officiis
+                  explicabo.
                 </p>
               </div>
 
@@ -177,7 +198,7 @@
           </div>
 
           <!--event 3 container-->
-          <div class="conatainer flex flex-col items-center my-5 bg-gray-100">
+          <div class="conatainer flex flex-col items-center my-5 bg-gray-100 mx-4 rounded-xl bg-opacity-50">
             <!--event 3 heading-->
             <div class="font-sanchez text-[14px] my-3">Event 3</div>
 
@@ -200,6 +221,7 @@
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>
